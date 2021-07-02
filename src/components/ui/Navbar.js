@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Navbar = () => {
+    const {name} = useSelector(state => state.auth);
     return (
         <div className="navbar navbar-dark bg-dark mb-4">
             <span className="navbar-brand">
