@@ -27,8 +27,7 @@ const fetchConToken = ( endpoint, data, method = 'GET' ) => {
             method,
             headers: {
                 'x-token': token
-            },
-            body: JSON.stringify( data )
+            }
         });
     } else {
         return fetch( url, {
@@ -41,6 +40,8 @@ const fetchConToken = ( endpoint, data, method = 'GET' ) => {
         });
     }
 }
+
+
 
 export {
     fetchSinToken,
